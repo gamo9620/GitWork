@@ -1,0 +1,230 @@
+* {
+    text-align: center
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: normal;
+    z-index: 2;
+    background-color: #FFF;
+    box-shadow: 1px 1px 20px 2px #ddd
+}
+
+.logo {
+    margin-top: 8px;
+    width: auto;
+    height: 40px;
+    cursor: pointer;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#search {
+    position: fixed;
+    top: 40px;
+    left: 60px;
+    color: #999;
+    font-size: 8px;
+}
+
+#search:before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 5px;
+    background-image: url(../img/icon/search.png);
+    background-size: contain;
+    vertical-align: middle;
+}
+
+input {
+    border: solid 1px rgba(200, 200, 200, 0.1);
+    border-radius: 20px;
+    height: 12px;
+    font-size: 8px;
+    position: fixed;
+    text-align: left;
+}
+
+#chkout {
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    background-image: url(../img/icon/cart.png);
+    background-size: contain;
+    vertical-align: middle;
+}
+
+#chkout:hover {
+    cursor: pointer;
+    background-image: url(../img/icon/cart2.png);
+    transition-duration: 0.3s;
+}
+
+header ul li {
+    list-style: none;
+    padding: 15px;
+    font-family: "proxima-nova", sans-serif;
+    height: 40px;
+    width: 10vw;
+    font-size: 12px;
+    color: #999
+}
+
+header ul :hover {
+    cursor: pointer;
+    border-bottom: thick solid #acc;
+    color: #acc;
+    transition-property: border-bottom;
+    transition-duration: 0.2s;
+}
+
+#sidebar {
+    position: fixed;
+    left: 0;
+    width: 19vw;
+    min-width: 200px;
+    height: 100%;
+    z-index: 1;
+    box-shadow: 1px 1px 1px 1px #eee;
+    background: rgba(230, 230, 230, 0.1)
+}
+
+#sidebar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 3vw;
+    margin-top: 150px;
+}
+
+#sidebar ul li {
+    list-style: none;
+    padding: 15px;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: bold;
+    text-align: left;
+    height: 3vw;
+    width: 10vw;
+    max-width: 100px;
+    max-height: 45px;
+    font-size: 16px;
+
+    color: #777
+}
+
+#sidebar ul li:hover {
+    cursor: pointer;
+    color: #acc;
+}
+
+li #check {
+    color: #acc;
+}
+
+main {
+    position: absolute;
+    top: 110px;
+    left: 20vw;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+#head {
+    width: 80vw;
+    height: auto;
+}
+
+main ul {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+main ul li {
+    list-style: none;
+    width: 20vw;
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+main ul li img {
+    margin: auto;
+    width: 90%;
+    height: auto;
+    box-shadow: 1px 1px 10px 2px #888;
+    opacity: 0.8;
+}
+
+main ul li img:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition-duration: 0.3s;
+    opacity: 0.6;
+}
+
+
+main ul li p {
+    font-family: "kandal", serif;
+    font-weight: lighter;
+    color: #777;
+    margin-top: 15px;
+    font-size: 1vw;
+    text-align: center;
+    width: 100%;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #8ab;
+    height: 30px;
+    font-family: "proxima-nova", sans-serif;
+    z-index: 2;
+    box-shadow: -1px -1px 20px 2px #ddd;
+}
+
+footer ul {
+    display: flex;
+    padding-left: 10px;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+footer ul li {
+    list-style: none;
+    padding: 8px;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+footer ul li:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 1);
+}
